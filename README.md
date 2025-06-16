@@ -31,6 +31,12 @@ You will need a C compiler (`gcc` or `clang`), `make`, and the `ncurses` develop
     sudo apt install build-essential libncurses-dev
     ```
 
+* **On Red Hat / CentOS / Rocky Linux:**
+    ```bash
+    sudo yum groupinstall "Development Tools"
+    sudo yum install ncurses-devel
+    ```
+
 * **On macOS (using Homebrew):**
     ```bash
     # Install Command Line Tools if you haven't already
