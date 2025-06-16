@@ -6,9 +6,10 @@ LDFLAGS = -lncurses
 # Project files
 TARGET = marquee
 SRCS = marquee.c
+INSTALL_DIR = /usr/local/bin
 
 # Phony targets are not files
-.PHONY: all clean
+.PHONY: all clean install uninstall
 
 # Default target
 all: $(TARGET)
@@ -22,3 +23,11 @@ $(TARGET): $(SRCS)
 # Rule to remove generated files
 clean:
 	rm -f $(TARGET)
+
+# Rule to install the target executable
+install: $(TARGET)
+	cp $(TARGET) $(INSTALL_DIR)
+
+# Rule to uninstall the target executable
+uninstall:
+	rm -f $(INSTALL_DIR)/$(TARGET)
