@@ -18,7 +18,7 @@ Follow these steps to clone and compile the project.
 
 **1. Clone the repository**
 ```bash
-git clone [https://github.com/agtkh/marquee.git](https://github.com/agtkh/marquee.git)
+git clone https://github.com/agtkh/marquee.git
 cd marquee
 ```
 
