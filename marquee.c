@@ -187,9 +187,12 @@ static void run_animation(char* raw_text, const AppConfig* config) {
 // Converts a 24-bit RGB color to the nearest color in the xterm 256-color palette.
 static short rgb_to_256(int r, int g, int b) {
     // Clamp values to the valid 0-255 range.
-    if (r < 0) r = 0; if (r > 255) r = 255;
-    if (g < 0) g = 0; if (g > 255) g = 255;
-    if (b < 0) b = 0; if (b > 255) b = 255;
+    if (r < 0) r = 0;
+    if (r > 255) r = 255;
+    if (g < 0) g = 0;
+    if (g > 255) g = 255;
+    if (b < 0) b = 0;
+    if (b > 255) b = 255;
 
     // Check for grayscale first, as it has a separate ramp.
     // The check `r - g < 8 && g - b < 8` is a simple way to find near-grays.
