@@ -53,6 +53,18 @@ make
 ```
 The executable `marquee` will be created in the current directory.
 
+**4. Install**
+To install the `marquee` executable to `/usr/local/bin`, run:
+```bash
+sudo make install
+```
+
+**5. Uninstall**
+To remove the `marquee` executable from `/usr/local/bin`, run:
+```bash
+sudo make uninstall
+```
+
 ## Usage
 
 The program's help message provides a complete list of options.
