@@ -1,6 +1,6 @@
 # Compiler and flags
 CC = gcc
-CFLAGS = -Wall -g -std=c11
+CFLAGS = -Wall -O2 -std=c11
 LDFLAGS = -lncurses
 
 # Project files
